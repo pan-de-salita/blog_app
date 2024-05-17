@@ -6,9 +6,12 @@ class HomesController < ApplicationController
     # @homes = Home.all
     @greeting = 'Hello'
     @current_user = 'Test'
+    session[:current_user] = @current_user
   end
 
-  def about; end
+  def about
+    @current_user = session[:current_user]
+  end
 
   # # GET /homes/1 or /homes/1.json
   # def show
