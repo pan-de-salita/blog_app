@@ -5,6 +5,7 @@ class HomesController < ApplicationController
   def index
     # @homes = Home.all
     @greeting = 'Hello'
+    @current_user = 'Test'
   end
 
   def about; end
