@@ -7,6 +7,8 @@ class HomesController < ApplicationController
     @greeting = 'Hello'
   end
 
+  def about; end
+
   # # GET /homes/1 or /homes/1.json
   # def show
   # end
