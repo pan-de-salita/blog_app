@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :homes
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   get '/' => 'homes#index'
-  get '/about' => 'homes#about', as: :about_home
+  # get '/about' => 'homes#about', as: :about_home
+  get '/about' => 'homes#about'
   get '/posts' => 'posts#index'
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
