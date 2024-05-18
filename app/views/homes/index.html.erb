@@ -1,8 +1,12 @@
 <%= render 'home', user: @current_user %>
 
-<p style="color: green"><%= notice %></p>
+<div class='flex justify-center'>
+  <p style="color: green"><%= notice %></p>
 
-<h1><%= @greeting %></h1>
+  <div class=''>
+    <h1><%= @greeting %></h1>
+  </div>
 
-<%= link_to "About", '/about' %>
-<%= link_to "Posts", '/posts' %>
+  <%= link_to "About", '/about' %>
+  <%= link_to "Posts", '/posts' %>
+</div>
